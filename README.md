@@ -18,10 +18,14 @@
 	- React
 	- Mongo
 	- Express/Node
+  - Mdl Lite
 
 ###Stretch:
 	- Karma
-	- Postgres
+	- Postgres on a second API that Pi hits
+  - Webpack
+  - Redux
+
 
 
 ##Stretch:  
