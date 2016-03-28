@@ -21,10 +21,11 @@
   - Mdl Lite
 
 ###Stretch:
-	- Karma
 	- Postgres on a second API that Pi hits
   - Webpack
   - Redux
+  - ESLint
+  - TDD
 
 
 
