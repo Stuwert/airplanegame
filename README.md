@@ -35,12 +35,12 @@
 
 ##Mockups Below:
 
-![Prototype 1]('Prototypes/1Prototype.jpg')
-![Prototype 2]('Prototypes/2Prototype.jpg')
-![Prototype 3]('Prototypes/3Prototype.jpg')
-![Prototype 4]('Prototypes/4Prototype.jpg')
-![Prototype 5]('Prototypes/5Prototype.jpg')
-![Prototype 6]('Prototypes/6Prototype.jpg')
-![Prototype 7]('Prototypes/7Prototype.jpg')
-![Prototype 8]('Prototypes/8Prototype.jpg')
-![Prototype 9]('Prototypes/9Prototype.jpg')
+![Prototype 1](Prototypes/1Prototype.jpg)
+![Prototype 2](Prototypes/2Prototype.jpg)
+![Prototype 3](Prototypes/3Prototype.jpg)
+![Prototype 4](Prototypes/4Prototype.jpg)
+![Prototype 5](Prototypes/5Prototype.jpg)
+![Prototype 6](Prototypes/6Prototype.jpg)
+![Prototype 7](Prototypes/7Prototype.jpg)
+![Prototype 8](Prototypes/8Prototype.jpg)
+![Prototype 9](Prototypes/9Prototype.jpg)
