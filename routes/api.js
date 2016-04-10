@@ -13,11 +13,11 @@ router.get("/movies", function(req, res){
   })
 })
 
-router.get("/movies/:id", function(req, res){
-  Movie.findById(req.params.id, function(err, movie){
+router.get("/movies/:title", function(req, res){
+  Movie.find({title: req.params.title}, function(err, movie){
     if (err) throw err;
 
-    res.json(movie)
+    res.json(movie[0])
   })
 })
 
@@ -29,11 +29,11 @@ router.get("/articles", function(req, res){
   })
 })
 
-router.get("/articles/:id", function(req, res){
-  Article.findBydId(req.params.id, function(err, article){
+router.get("/articles/:title", function(req, res){
+  Article.find({title: req.params.title }, function(err, article){
     if(err) throw err;
 
-    res.json(article)
+    res.json(article[0])
   })
 })
 
@@ -45,11 +45,11 @@ router.get("/food", function(req, res){
   })
 })
 
-router.get("/food/:id", function(req, res){
-  Article.findBydId(req.params.id, function(err, food){
+router.get("/food/:name", function(req, res){
+  Article.findBydId({name: req.params.name}, function(err, food){
     if(err) throw err;
 
-    res.json(food)
+    res.json(food[0])
   })
 })
 
@@ -57,7 +57,7 @@ router.get("/flightinfo", function(req, res){
   FlightInfo.find({}, function(err, flightInfo){
     if (err) throw err;
 
-    res.json(flightInfo)
+    res.json(flightInfo[0])
   })
 })
 
