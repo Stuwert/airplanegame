@@ -22,7 +22,7 @@ router.get("/movies/:id", function(req, res){
 })
 
 router.get("/articles", function(req, res){
-  Article.find({},, function(err, articles){
+  Article.find({}, function(err, articles){
     if(err) throw err;
 
     res.json(articles)
