@@ -1,23 +1,29 @@
 var express = require('express');
 var router = express.Router();
-var mongoosePosts = require('./lib/mongo/dbPostCalls')
-var mongooseGets = require('./lib/mongo/dbGetCalls')
+var User = require('../lib/mongo/models/userModel')
 
 //Needs middleware to validate that this is ok.
 
 router.post('/movies', function(req, res){
-// gets object of movie title, image
-// saves to user movies array
+  User.findById(req.body.info.id, function(err, user){
+    user.movies.push(req.body.info.movie)
+    user.save(function(err){
+      if (err) throw err;
+
+      console.log('saved!')
+    })
+  })
 })
 
 router.post('/articles', function(req, res){
-  // gets object of article title, blurb, author
-  // saves to user articles array
-})
+  User.findById(req.body.info.id, function(err, user){
+    user.articles.push(req.body.info.article)
+    user.save(function(err){
+      if (err) throw err;
 
-router.post('/food', function(req, res){
-  //gets object of food name, price, calories
-  //saves to user food array
+      console.log('saved!')
+    })
+  })
 })
 
 module.exports = router;

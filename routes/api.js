@@ -1,48 +1,64 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('./lib/mongo/dbGetCalls')
-
+var Movie = require('../lib/mongo/models/moviesModel')
+var Article = require('../lib/mongo/models/articleModel')
+var Food = require('../lib/mongo/models/foodModel')
+var FlightInfo = require('../lib/mongo/models/flightInfoModel')
 
 router.get("/movies", function(req, res){
-  // mongoose.getAllMovies(function(err, movies){
-  //   res.json(movies);
-  // })
+  Movie.find({}, function(err, movies){
+    if(err) throw err;
+
+    res.json(movies)
+  })
 })
 
 router.get("/movies/:id", function(req, res){
-  // mongoose.getOneMovie(req.params.id, function(err, movie){
-  //   res.json(movie)
-  // })
+  Movie.findById(req.params.id, function(err, movie){
+    if (err) throw err;
+
+    res.json(movie)
+  })
 })
 
 router.get("/articles", function(req, res){
-  // mongoose.getAllArticles(function(err, articles){
-  // res.json(articles)
-  // });
+  Article.find({},, function(err, articles){
+    if(err) throw err;
+
+    res.json(articles)
+  })
 })
 
 router.get("/articles/:id", function(req, res){
-  // mongoose.getOneArticle(req.params.id, function(err, article){
-  // res.json(article)
-  // })
+  Article.findBydId(req.params.id, function(err, article){
+    if(err) throw err;
+
+    res.json(article)
+  })
 })
 
 router.get("/food", function(req, res){
-  // mongoose.getAllFood(function(err, food){
-  //   res.json(food)
-  // })
+  Article.find({}, function(err, foods){
+    if(err) throw err;
+
+    res.json(foods)
+  })
 })
 
 router.get("/food/:id", function(req, res){
-  // mongoose.getOneFood(req.params.id, function(err, food){
-  //   res.json(food)
-  // })
+  Article.findBydId(req.params.id, function(err, food){
+    if(err) throw err;
+
+    res.json(food)
+  })
 })
 
 router.get("/flightinfo", function(req, res){
-  // mongoose.getFlightInfo({}, function(err, info){
-  //   res.json(info)
-  // })
+  FlightInfo.find({}, function(err, flightInfo){
+    if (err) throw err;
+
+    res.json(flightInfo)
+  })
 })
 
 module.exports = router;
