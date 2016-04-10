@@ -38,7 +38,7 @@ router.get("/articles/:title", function(req, res){
 })
 
 router.get("/food", function(req, res){
-  Article.find({}, function(err, foods){
+  Food.find({}, function(err, foods){
     if(err) throw err;
 
     res.json(foods)
