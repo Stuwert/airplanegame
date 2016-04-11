@@ -1,0 +1,1 @@
+{"_id":{"$oid":"57095fd85c5a8dff7783dfc4"},"departureCity":"Seattle","departureAirport":"SEA","arrivalCity":"Denver","arrivalAirport":"DEN","departureTime":{"$date":"2016-04-08T21:02:00.000Z"},"estimatedArrivalTime":{"$date":"2016-04-09T01:22:00.000Z"},"milesFlown":889,"aircraftType":"A320","flightNumber":1234,"__v":0}
