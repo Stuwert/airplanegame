@@ -10,23 +10,23 @@ router.post('/login', function(req, res){
   FlightInfo.find({}, function(err, flightInfo){
     if (err) throw err;
 
-    unirest.get('http://localhost:8000/login')
+    unirest.get('http://fresh-alaska-breeze.herokuapp.com/login')
       .headers({
         flightInfo: flightInfo[0].flightNumber,
         username: username,
         password: password
       })
       .end(function(response){
-        if(response.code === 200){
-          User.find({username: response.body.username}, function(err, user){
+        if(response.code === 202){
+          User.find({name: response.body.username}, function(err, user){
             if (err) throw err;;
             if(user.length > 0){
-              user.authorization = response.body.authorization
+              user[0].authorization = response.body.authorization
 
-              user.save(function(err){
+              user[0].save(function(err){
                 if(err) throw err;
 
-                res.json(user)
+                res.json(user[0])
               })
             }else{
               var newUser = new User({
@@ -40,6 +40,7 @@ router.post('/login', function(req, res){
               })
               newUser.save(function(err){
                 if(err) throw err;
+
 
                 res.json(newUser)
               })
