@@ -6,7 +6,9 @@ var Food = require('../lib/mongo/models/foodModel')
 var FlightInfo = require('../lib/mongo/models/flightInfoModel')
 
 router.get("/movies", function(req, res){
+  console.log('bing bong');
   Movie.find({}, function(err, movies){
+    console.log(movies);
     if(err) throw err;
 
     res.json(movies)
