@@ -943,16 +943,16 @@ webpackJsonp([0,3],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = {
-	  host: 'localhost',
-	  port: '3000',
-	  socket: _socket2.default.connect('http://localhost:3000')
+	  host: 'aviatordemo.herokuapp.com',
+	  port: '',
+	  socket: _socket2.default.connect('http://aviatordemo.herokuapp.com')
 	};
 
 /***/ },
 /* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Module dependencies.
 	 */
@@ -1178,7 +1178,7 @@ webpackJsonp([0,3],[
 /* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * This is the web browser implementation of `debug()`.
 	 *
@@ -1352,7 +1352,7 @@ webpackJsonp([0,3],[
 /* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * This is the common logic for both the Node.js and web browser
 	 * implementations of `debug()`.
@@ -1686,7 +1686,7 @@ webpackJsonp([0,3],[
 /* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Module dependencies.
 	 */
@@ -3034,7 +3034,7 @@ webpackJsonp([0,3],[
 /* 235 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Expose `Emitter`.
 	 */
@@ -3372,7 +3372,7 @@ webpackJsonp([0,3],[
 /* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Module dependencies.
 	 */
@@ -3935,7 +3935,7 @@ webpackJsonp([0,3],[
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	module.exports =  __webpack_require__(240);
 
 
@@ -3943,7 +3943,7 @@ webpackJsonp([0,3],[
 /* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	module.exports = __webpack_require__(241);
 
 	/**
@@ -4796,7 +4796,7 @@ webpackJsonp([0,3],[
 /* 244 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Module exports.
 	 *
@@ -6253,7 +6253,7 @@ webpackJsonp([0,3],[
 /* 249 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Gets the keys for an object.
 	 *
@@ -6838,7 +6838,7 @@ webpackJsonp([0,3],[
 /* 257 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Expose `Emitter`.
 	 */
@@ -7051,7 +7051,7 @@ webpackJsonp([0,3],[
 /* 259 */
 /***/ function(module, exports) {
 
-	
+
 	module.exports = function(a, b){
 	  var fn = function(){};
 	  fn.prototype = b.prototype;
@@ -7280,7 +7280,7 @@ webpackJsonp([0,3],[
 	  this.script = script;
 
 	  var isUAgecko = 'undefined' != typeof navigator && /gecko/i.test(navigator.userAgent);
-	  
+
 	  if (isUAgecko) {
 	    setTimeout(function () {
 	      var iframe = document.createElement('iframe');
@@ -7683,7 +7683,7 @@ webpackJsonp([0,3],[
 /* 264 */
 /***/ function(module, exports) {
 
-	
+
 	var indexOf = [].indexOf;
 
 	module.exports = function(arr, obj){
@@ -7736,7 +7736,7 @@ webpackJsonp([0,3],[
 /* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * Module dependencies.
 	 */
@@ -8154,7 +8154,7 @@ webpackJsonp([0,3],[
 /* 267 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Expose `Emitter`.
 	 */
@@ -8340,7 +8340,7 @@ webpackJsonp([0,3],[
 /* 269 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Module exports.
 	 */
@@ -8474,7 +8474,7 @@ webpackJsonp([0,3],[
 /* 273 */
 /***/ function(module, exports) {
 
-	
+
 	/**
 	 * Expose `Backoff`.
 	 */
