@@ -943,9 +943,9 @@ webpackJsonp([0,3],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	module.exports = {
-	  host: 'aviatordemo.herokuapp.com',
-	  port: '',
-	  socket: _socket2.default.connect('http://aviatordemo.herokuapp.com')
+	  host: 'localhost',
+	  port: '3000',
+	  socket: _socket2.default.connect('http://localhost:3000')
 	};
 
 /***/ },
