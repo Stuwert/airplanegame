@@ -35,6 +35,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/resources", express.static(path.join(__dirname, "resources")))
+app.use("/images", express.static(path.join(__dirname, "images")))
 app.use('/api', api)
 app.use('/api/user', login)
 app.use("/", function (req, res){
