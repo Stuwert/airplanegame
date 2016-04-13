@@ -887,7 +887,7 @@ webpackJsonp([0,3],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var link = 'http://localhost:3000';
+	var link = 'https://aviatordemo.herokuapp.com';
 
 	module.exports = {
 	  config: link,
